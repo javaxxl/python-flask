@@ -10,7 +10,8 @@ pipeline {
         }
         stage('build docker image') {
             steps {
-                echo 'build docker image - SUCCESS'
+                sh '''java --version
+mvn -v'''
                 echo 'build docker image - SUCCESS'
             }
         }
