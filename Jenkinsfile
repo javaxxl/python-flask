@@ -11,6 +11,7 @@ pipeline {
         stage('build docker image') {
             steps {
                 echo 'build docker image - SUCCESS'
+                echo 'build docker image - SUCCESS'
             }
         }
         stage('sonarqube scan code') {
