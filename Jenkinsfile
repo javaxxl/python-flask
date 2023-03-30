@@ -2,12 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('pull code from github') {
-            steps {
-                git branch: 'main', url: 'git@github.com:javaxxl/python-flask.git'
-                echo 'pull code from github - SUCCESS'
-            }
-        }
+       
         stage('build docker image') {
             steps {
                 sh '''java --version
